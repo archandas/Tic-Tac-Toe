@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+body{
+    background-color:rgb(27, 3, 26);
+    text-align:center;
+    font-family: 'Sigmar One', cursive;
+}
+h1{
+    /* position: relative;
+    text-align: center; */
+    /* height:9vmin;
+    width:35vmin; */
+    /* line-height:9vmin; */
+    /* font-family:inherit; */
+    color:rgb(104, 232, 255);
+    /* font-size:5vmin; */
+    /* background-color: red; */
+}
+.main{
+    height:100vh;
+    width:100vw;
+    text-align:center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    /* background-color: blue; */
+    z-index:-5;
+    position:fixed;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+  }
+.game{
+    
+    height:59vmin;
+    width:59vmin;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.8vmin;
+    background:linear-gradient(
+        rgb(45, 0, 247),rgb(106, 0, 244),rgb(137, 0, 242),
+        rgb(161, 0, 242),rgb(188, 0, 221),rgb(219, 0, 182),
+        rgb(229, 0, 164),rgb(242, 0, 137)
+    );
+    z-index:5;
+}
+.box{
+    height:18.5vmin;
+    width:18.4vmin;
+    /* border-radius:1rem; */
+    background-color:rgb(27, 3, 26);
+    font-family: inherit;
+    color:rgb(255,255,255);
+    border:none;
+    /* box-shadow:0 0 1rem rgba(0,0,0,0.3); */
+    font-size:8vmin;
+    z-index:10;
+}
+#reset{
+    text-align: center;
+    color:aliceblue;
+    font-family:inherit;
+    font-size:3.5vmin;
+    font-family: inherit;
+    height:8vmin;
+    padding-bottom:auto;
+    width:20vmin;
+    border:3px solid rgb(255, 92, 133);
+    border-radius:1vmin;
+    background-color:rgb(219, 46, 81);
+}
+
+.resBox{
+    height:100vh;
+    width:100vw;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    font-family: inherit;
+    background-color: rgb(31, 1, 21);
+    
+    position:fixed;
+}
+.hide {
+    display: none;
+  }
+#result {
+    color: #e81e4d;
+    font-size: 5vmin;
+    animation: msg 1s ease-in-out infinite normal;
+    text-shadow:3px 2px 5px rgb(0, 0, 0);
+  }
+  @keyframes msg {
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  #newGame{
+    text-align: center;
+    color:aliceblue;
+    font-family:inherit;
+    font-size:3.5vmin;
+    font-family: inherit;
+    height:8vmin;
+    padding-bottom:auto;
+    width:35vmin;
+    border:3px solid rgb(255, 92, 133);
+    border-radius:1vmin;
+    background-color:rgb(220, 60, 92);
+  }
